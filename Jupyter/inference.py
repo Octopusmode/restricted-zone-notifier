@@ -76,7 +76,7 @@ class Network:
         if "CPU" in device:
             supported_layers = self.plugin.query_network(self.net, "CPU")
             not_supported_layers = \
-                [l for l in self.net.layers.keys() if l not in supported_layers]
+                [l for l in self.net.get_ops.keys() if l not in supported_layers]
             if len(not_supported_layers) != 0:
                 log.error("Following layers are not supported by "
                           "the plugin for specified device {}:\n {}".

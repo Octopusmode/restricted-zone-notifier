@@ -1,9 +1,19 @@
+// {
+    
+//     "inputs": [
+
+// 	    {
+//             "video": "../resources/worker-zone-detection.mp4"
+//         }
+//     ]
+    
+// }
 {
     
     "inputs": [
 
 	    {
-            "video": "../resources/worker-zone-detection.mp4"
+            "video": "0"
         }
     ]
     
